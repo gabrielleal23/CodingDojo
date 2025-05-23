@@ -14,4 +14,11 @@ def determinar_ganador(jugador,computadora):
     else : 
         return "Perdiste"
     
-    
+jugador = input("Elige piedra, papel o tijera: \n").lower()
+computadora = obtener_eleccion_computadora()
+
+print(f"Tú elegiste: {jugador}")
+print(f"La computadora eligió: {computadora}")
+
+resultado = determinar_ganador(jugador, computadora)
+print(f"Resultado: {resultado}")
